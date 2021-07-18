@@ -132,7 +132,7 @@ patch:
       states: [ 中文, 西文 ]
     - name: emoji_suggestion
       reset: 1
-      states: [ "Yes", "No" ]
+      states: [ 🈶️️, 🈚️️ ]
     - name: full_shape
       states: [ 半角, 全角 ]
     - name: simplification
@@ -140,6 +140,12 @@ patch:
       states: [ 漢字, 汉字 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
+    - options: [utf8, gbk, gb2312] # (※2)字符集选单
+      reset: 0                           #     默认 UTF8
+      states:
+        - UTF-8
+        - GBK
+        - GB2312
   engine/translators:
     # - lua_translator@date_translator
     # - lua_translator@week_translator
@@ -148,12 +154,12 @@ patch:
     - table_translator@custom_phrase
     # - reverse_lookup_translator #反查
   engine/filters:
-    - simplifier@emoji_suggestion
-    #- simplifier@zh_simp
     - simplifier
+    #- simplifier@zh_simp
+    - simplifier@emoji_suggestion
     - uniquifier
-    #- charset_filter@gbk
-    #- single_char_filter
+    - charset_filter@gbk
+    - single_char_filter
   engine/processors:
     - ascii_composer
     - recognizer
