@@ -48,6 +48,7 @@ import_tables:
   - luna_pinyin.xiandaihanyu
   - luna_pinyin.chengyusuyu
   - luna_pinyin.popular
+  - luna_pinyin.zonghe
   - essay
   - luna_pinyin.computer
   - luna_pinyin.kaifa
