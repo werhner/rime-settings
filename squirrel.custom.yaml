@@ -1,7 +1,4 @@
 patch:
-  # 通知栏显示方式以及 ascii_mode 应用，与外观无关
-  show_notifications_via_notification_center: true
-
   # 以下软件默认英文模式
   app_options/com.apple.finder:
     ascii_mode: true
@@ -25,8 +22,10 @@ patch:
     ascii_mode: true
 
   # 如果想要修改皮肤，直接更改 color_scheme 的值即可
-  style/color_scheme: apathy
-  style/color_scheme_dark: rimeblue
+  style/color_scheme: native
+  style/color_scheme_dark: psionics
+  style/horizontal: false
+  style/font_point: 18
 
   preset_color_schemes/rimeblue:
     name: "RimeBlue"
@@ -49,3 +48,42 @@ patch:
     candidate_text_color: 0xFFFFFF              # 非第一候选项
     hilited_candidate_back_color: 0xD1B954      # 第一候选项背景
     hilited_candidate_text_color: 0xFFFFFF      # 第一候选项
+
+  preset_color_schemes/tantsing:
+    name: "丹青／Tantsing"
+    horizontal: true
+    back_color: 0xE3E3E3
+    border_color: 0x000000
+    candidate_text_color: 0x000000
+    comment_text_color: 0x474747
+    font_point: 16
+    hilited_back_color: 0x1A0791
+    hilited_candidate_back_color: 0x6F0B73
+    hilited_candidate_text_color: 0xE3E3E3
+    hilited_text_color: 0xE3E3E3
+    text_color: 0x000000
+
+  preset_color_schemes/mritd:
+    name: '漠然 / mritd_dark'
+    author: mritd <mritd1234@gmail.com>
+    horizontal: true # 水準排列
+    # inline_preedit: false # 單行顯示，false 雙行顯示
+    corner_radius: 5 # 候選條圓角
+    hilited_corner_radius: 3 # 高亮圓角
+    border_height: 6 # 視窗邊界高度，大於圓角半徑才生效
+    border_width: 6 # 視窗邊界寬度，大於圓角半徑才生效
+    border_color_width: 0
+    #font_face: 'Times-Roman, 儷黑 Pro,ApplecolorEmoji,HanaMinA,HanaMinB' # 候選詞字體
+    font_point: 16 # 候選字詞大小
+    label_font_point: 14 # 候選編號大小
+    text_color: 0xdedddd # 拚音行文字顔色，24 位色值，16 進製，BGR 順序
+    back_color: 0x4b4b4b # 候選條背景色
+    label_color: 0x888785 # 預選欄編號顔色
+    border_color: 0x4b4b4b # 邊框色
+    candidate_text_color: 0xffffff # 預選項文字顔色
+    hilited_text_color: 0xdedddd # 高亮拚音 (需要開啓內嵌編碼)
+    hilited_back_color: 0x6D6D6D # 高亮拚音 (需要開啓內嵌編碼)
+    hilited_candidate_text_color: 0xFFE696 # 第一候選項文字顔色
+    hilited_candidate_back_color: 0x4b4b4b # 第一候選項背景背景色
+    hilited_candidate_label_color: 0xffffff # 第一候選項編號顔色
+    comment_text_color: 0xdedddd # 拚音等提示文字顔色
