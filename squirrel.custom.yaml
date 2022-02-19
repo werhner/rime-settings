@@ -12,6 +12,8 @@ patch:
     ascii_mode: true
   app_options/com.apple.keychainaccess:
     ascii_mode: true
+  app_options/com.runningwithcrayons.Alfred:
+    ascii_mode: true
   app_options/com.sublimetext.3:
     ascii_mode: true
   app_options/com.jetbrains.intellij:
