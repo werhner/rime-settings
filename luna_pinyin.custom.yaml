@@ -130,9 +130,9 @@ patch:
     - name: ascii_mode
       reset: 0
       states: [ 中文, 西文 ]
-    - name: emoji_suggestion
-      reset: 1
-      states: [ 🈶️️, 🈚️️ ]
+        #- name: emoji_suggestion
+        #  reset: 1
+        #  states: [ 🈶️️, 🈚️️ ]
     - name: full_shape
       states: [ 半角, 全角 ]
     - name: simplification
@@ -175,9 +175,9 @@ patch:
   #   - abc_segmentor
   #   - punct_segmentor
   #   - fallback_segmentor
-  emoji_suggestion:
-    opencc_config: emoji.json
-    option_name: emoji_suggestion
+  #emoji_suggestion:
+    #opencc_config: emoji.json
+    #option_name: emoji_suggestion
     # tips: all
   
   punctuator:
