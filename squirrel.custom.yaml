@@ -58,7 +58,8 @@ patch:
   style/color_scheme: native
   style/color_scheme_dark: psionics
   style/horizontal: false
-  style/font_point: 18
+  style/font_point: 16
+  style/label_font_point: 16
 
   preset_color_schemes/rimeblue:
     name: "RimeBlue"
